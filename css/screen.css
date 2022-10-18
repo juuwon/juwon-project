@@ -70,6 +70,10 @@
     .home-wrap svg {width: 200px; height: 308px;}
     .header-top .nav ul li a {display: none;}
     .tab-menu > li {padding: 0px;}
+    .tab-menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -84,8 +88,9 @@
     /* contact */
     .contact-wrap .contact-desc h3 {font-size: 2.8rem;}
     .contact-wrap .contact-desc P {font-size: 2rem; }
+    .skill-txtBox p {margin: 0px;}
 
-    .txtBox {padding: 90px 50px;}
+    .txtBox {padding: 65px 30px;}
 
     .content-desc .content-tit {
         font-size: 3rem;
@@ -93,11 +98,6 @@
     }
     .content-desc .content-txt{
         font-size: 2rem;
-    }
-    .tab-menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .form-elements {font-size: 2rem;}
@@ -143,7 +143,11 @@
     button {
         font-size: 1.3rem;
     }
-
+    .tab-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
 }
 
@@ -151,7 +155,7 @@
     /* home */
     .home-wrap{height: 100%;}
     .txtBox {padding: 40px 50px;}
-    .skill-txtBox p {padding: 0;}
+    .skill-txtBox p {padding: 20px;}
 
     .text-area {font-size: 5rem;}
 }
