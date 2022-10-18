@@ -54,6 +54,14 @@
     .skill-desc .skill-tit {font-size: 2.5rem;}
 
     .contact-wrap{display: flex; flex-direction: column;}
+
+    .skill-txtBox p {
+        padding: 30px 20px 50px;
+    }
+    .tab-menu > li > a {
+        font-size: 1.9rem;
+    }
+    
 }
 
 @media only all and (max-width:767px){
@@ -61,6 +69,12 @@
     .text-area {font-size: 7rem;}
     .home-wrap svg {width: 200px; height: 308px;}
     .header-top .nav ul li a {display: none;}
+    .tab-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tab-menu > li {padding: 0px;}
 
 }
 
@@ -75,6 +89,9 @@
     /* contact */
     .contact-wrap .contact-desc h3 {font-size: 2.8rem;}
     .contact-wrap .contact-desc P {font-size: 2rem; }
+
+    .txtBox {padding: 90px 50px;}
+    
 }
 
 @media only all and (max-width:570px){
@@ -85,11 +102,18 @@
     /* footer */
     .footer-wrap{flex-direction: column;}
     .footer-wrap > div {margin-bottom: 1rem;}
+
+    .text-area {font-size: 6rem;}
+
+    
     
 }
 
 @media only all and (max-width:479px){
     /* home */
-    .home-wrap{height: 80%;}
+    .home-wrap{height: 100%;}
+    .txtBox {padding: 40px 50px;}
+    .skill-txtBox p {padding: 0;}
 
+    .text-area {font-size: 5rem;}
 }

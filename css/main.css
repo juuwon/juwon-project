@@ -547,7 +547,8 @@ body {font-family: 'Noto Sans KR', 'Anton', sans-serif;}
 /* loading */
 .loading-wrap {
     width: 100%; height: 100vh; z-index: 20;
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     flex-direction: column;
     position: fixed; left: 0; top: 0;
