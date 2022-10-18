@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KimJuWon">
+    <meta name="description" content="반응형 웹 포트폴리오 클론코딩 입니다.">
+    <meta name="keywords" content=" 나비엔하우스,경동나비엔, 반응형 웹, 포트폴리오, 클론코딩">
+    <meta name="generator" content="vscode">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/fa-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/fa-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/fa-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/fa-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- //favicon -->
+    <script src="js/jquery.min_2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script1.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <!-- //script -->
+    <title>나비엔하우스</title>
+</head>
+<body>
+    <header id="header">
+        <h1 class="skip">나비엔 하우스</h1>
+        <div id="pc">
+            <div class="header_wrap">
+                    <div class="gnb">
+                        <div class="gnb_link">
+                            <div class="link_item"><a href="#">경동나비엔 홈페이지</a></div>
+                        </div>
+                        <div class="gnb_list">
+                            <ul>
+                                <li class="list_item"><a href="#">로그인</a></li>
+                                <li class="list_item"><a href="#">회원가입</a></li>
+                                <li class="list_item"><a href="#">주문조회</a></li>
+                                <li class="list_item"><a href="#">상담조회</a></li>
+                                <li class="list_item"><a href="#">B2B</a></li>
+                                <li class="list_item"><a href="#">NGB513,553 사전점검서비스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h1 class="header_logo"><a href="#" class="ir_pm">로고</a></h1>
+            </div>
+            <nav id="nav" class="nav">
+                <div id="navWrap">
+                    <div class="menuWrap">
+                        <div class="ham_menu"><a href="#" title="전체메뉴" class="allmenu_btn ir_pm">전체메뉴</a></div>
+                        <ul class="menu_list">
+                            <li class="menu_item m1"><a href="#" class="menu_anchor">제품</a>
+                                <div class="sub_wrap s1">
+                                    <ul class="sub_list">
+                                        <li class="sub_item"><a href="#" class="sub_anchor">보일러</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">온수매트</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">DC온열매트</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">청정환기시스템</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">스마트 홈</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">교체용 필터</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu_item m2"><a href="#" class="menu_anchor">나비엔</a></li>
+                            <li class="menu_item m3"><a href="#" class="menu_anchor">간편상담</a>
+                                <div class="sub_wrap s2">
+                                    <ul class="sub_list">
+                                        <li class="sub_item"><a href="#" class="sub_anchor">사진구매상담</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">AI 구매 상담</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">AI A/S접수</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">AI 룸콘 간단 매뉴얼</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu_item m4"><a href="#" class="menu_anchor">AS접수/고객상담</a>
+                                <div class="sub_wrap s3">
+                                    <ul class="sub_list">
+                                        <li class="sub_item"><a href="#" class="sub_anchor">A/S 접수 및 조회</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">1:1 상담</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">영상지원 상담</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">실시간 채팅상담</a></li>
+                                        <li class="sub_item"><a href="#" class="sub_anchor">NGB513,553 사전점검서비스</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu_item m5"><a href="#" class="menu_anchor">이벤트</a></li>
+                            <li class="menu_item m6"><a href="#" class="menu_anchor">구매꿀팁</a></li>
+                            <li class="menu_item m7"><a href="#" class="menu_anchor">단꿈상점</a></li>
+                        </ul>
+                        <div class="menu_cnt">
+                            <div class="search">
+                                <a href="#" class="ir_pm">통합검색</a>
+                            </div>
+                            <div class="cart">
+                                <a href="#" class="ir_pm">장바구니</a>
+                                <span class="cart_count"><a href="#">0</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            <div class="mobile">
+                <ul>
+                    <li>
+                        <a href="#" class="app-btn">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                        </a>
+                        <ul class="mobile-nav">
+                            <li><a href="#">제품</a></li>
+                            <li><a href="#">나비엔 LIVE</a></li>
+                            <li><a href="#">간편상담</a></li>
+                            <li><a href="#">AS접수/고객상담</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">구매꿀팁</a></li>
+                            <li><a href="#">단꿈상점</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="./img/logo.png" alt=" 로고이미지"></a></li>
+                    <li><a href="#" class="mobile-search"><img src="./img/btn_srch.png" alt="서치이미지"></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <h1 class="skip">배너</h1>
+        <div class="main_visual">
+            <div class="banner_wrap">
+                <ul class="banner_list bxslider">
+                    <li class="banner_item"></li>
+                    <li class="banner_item"></li>
+                    <li class="banner_item"></li>
+                    <li class="banner_item"></li>
+                    <li class="banner_item"></li>
+                </ul>
+                <div class="main_visual_wrap">
+                    <div class="main_visual_menu">
+                        <div class="visual_menu">
+                            <a href="#" class="menu_anchor">친환경 콘덴싱 보일러 설치 지원 사업</a>
+                            <a href="#" class="menu_anchor">숙면온도를 만드는 가전</a>
+                            <a href="#" class="menu_anchor">나비엔 청정환기시스템</a>
+                            <a href="#" class="menu_anchor">스마트 홈</a>
+                            <a href="#" class="menu_anchor">케어서비스 무상체험 이벤트</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mainCategory">
+        <h1 class="skip">메인 카테고리</h1>
+        <div class="container">
+            <ul class="main_category">
+                <li><a href="#"><span class="c_icon c_01"></span><p class="text">보일러</p></a></li>
+                <li><a href="#"><span class="c_icon c_02"></span><p class="text">온수매트</p></a></li>
+                <li><a href="#"><span class="c_icon c_03"></span><p class="text">DC온열매트</p></a></li>
+                <li><a href="#"><span class="c_icon c_04"></span><p class="text">청정환기시스템</p></a></li>
+                <li><a href="#"><span class="c_icon c_05"></span><p class="text">스마트 홈</p></a></li>
+                <li><a href="#"><span class="c_icon c_06"></span><p class="text">나비엔 라이브</p></a></li>
+                <li><a href="#"><span class="c_icon c_07"></span><p class="text">이벤트</p></a></li>
+                <li><a href="#"><span class="c_icon c_08"></span><p class="text">AS신청</p></a></li>
+            </ul>
+            <div class="boiler">
+                <a href="#">
+                    <span class="left_icon"></span>
+                    <span class="text"><em>나에게 딱 맞는 보일러를 고르려면,</em> 여기를 클릭하세요</span>
+                    <span class="right_icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="main_new">
+        <h1 class="skip">new_product</h1>
+        <div class="container">
+            <div class="new_product">
+                <h2>NEW</h2>
+                <div class="new_product_wrap">
+                    <div class="left">
+                        <a href="#"><img src="./img/Think WARM 친환경 콘덴싱 보일러 설치 의무화.png" alt="Think WARM 친환경 콘덴싱 보일러 설치 의무화 사진"></a>
+                    </div>
+                    <div class="right">
+                        <div class="new_product_track swiper mySwiper">
+                            <div class="new_product_list swiper-wrapper">
+                                <div class="new_product_slide swiper-slide">
+                                    <ul class="badge_wrap">
+                                        <li class="badge badge_new ir_pm">new</li>
+                                        <li class="badge badge_best ir_pm">best</li>
+                                    </ul>
+                                    <a href="#" class="product_a">
+                                        <img src="./img/제품이미지 (7).png" alt="제품이미지7">
+                                        <em>NAVIEN MATE</em>
+                                        <span class="pr_name">The Care <br>The Care EQM562</span>
+                                        <span class="pr_price"><strong>418,000</strong>원</span>
+                                    </a>
+                                    <div class="product_tag">
+                                        <a href="#">빠른난방</a>
+                                        <a href="#">자동물빼기</a>
+                                    </div>
+                                </div>
+                                <div class="new_product_slide swiper-slide">
+                                    <ul class="badge_wrap">
+                                        <li class="badge badge_new ir_pm">new</li>
+                                        <li class="badge badge_best ir_pm">best</li>
+                                    </ul>
+                                    <a href="#" class="product_a">
+                                        <img src="./img/제품이미지 (8).png" alt="제품이미지8">
+                                        <em>NAVIEN MATE</em>
+                                        <span class="pr_name">The Care <br>The Care EQM562</span>
+                                        <span class="pr_price"><strong>418,000</strong>원</span>
+                                    </a>
+                                    <div class="product_tag">
+                                        <a href="#">블루투스</a>
+                                        <a href="#">자동살균</a>
+                                    </div>
+                                </div>
+                                <div class="new_product_slide swiper-slide">
+                                    <ul class="badge_wrap">
+                                        <li class="badge badge_new ir_pm">new</li>
+                                        <li class="badge badge_best ir_pm">best</li>
+                                    </ul>
+                                    <a href="#" class="product_a">
+                                        <img src="./img/제품이미지 (9).png" alt="제품이미지9">
+                                        <em>NAVIEN MATE</em>
+                                        <span class="pr_name">The Care <br>The Care EQM562</span>
+                                        <span class="pr_price"><strong>418,000</strong>원</span>
+                                    </a>
+                                    <div class="product_tag">
+                                        <a href="#">블루투스</a>
+                                        <a href="#">자동물빼기</a>
+                                    </div>
+                                </div>
+                                <div class="new_product_slide swiper-slide">
+                                    <ul class="badge_wrap">
+                                        <li class="badge badge_new ir_pm">new</li>
+                                        <li class="badge badge_best ir_pm">best</li>
+                                    </ul>
+                                    <a href="#" class="product_a">
+                                        <img src="./img/제품이미지 (9).png" alt="제품이미지9">
+                                        <em>NAVIEN MATE</em>
+                                        <span class="pr_name">The Care <br>The Care EQM562</span>
+                                        <span class="pr_price"><strong>418,000</strong>원</span>
+                                    </a>
+                                    <div class="product_tag">
+                                        <a href="#">자동살균</a>
+                                        <a href="#">빠른난방</a>
+                                    </div>
+                                </div>
+                                <div class="new_product_slide swiper-slide">
+                                    <ul class="badge_wrap">
+                                        <li class="badge badge_new ir_pm">new</li>
+                                        <li class="badge badge_best ir_pm">best</li>
+                                    </ul>
+                                    <a href="#" class="product_a">
+                                        <img src="./img/제품이미지 (9).png" alt="제품이미지9">
+                                        <em>NAVIEN MATE</em>
+                                        <span class="pr_name">The Care <br>The Care EQM562</span>
+                                        <span class="pr_price"><strong>418,000</strong>원</span>
+                                    </a>
+                                    <div class="product_tag">
+                                        <a href="#">빠른난방</a>
+                                        <a href="#">자동살균</a>
+                                    </div>
+                                </div>
+                                <div class="new_product_slide swiper-slide">
+                                    <ul class="badge_wrap">
+                                        <li class="badge badge_new ir_pm">new</li>
+                                        <li class="badge badge_best ir_pm">best</li>
+                                    </ul>
+                                    <a href="#" class="product_a">
+                                        <img src="./img/제품이미지 (7).png" alt="제품이미지7">
+                                        <em>NAVIEN MATE</em>
+                                        <span class="pr_name">The Care <br>The Care EQM562</span>
+                                        <span class="pr_price"><strong>418,000</strong>원</span>
+                                    </a>
+                                    <div class="product_tag">
+                                        <a href="#">블루투스</a>
+                                        <a href="#">빠른난방</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="best_product">
+        <h2 class="skip">베스트 상품</h2>
+        <div class="container">
+            <h2>BEST</h2>
+            <div class="tab_wrap">
+                <div class="tab_menu">
+                    <button type="button" class="tab_m tab_m1">전체</button>
+                    <button type="button" class="tab_m tab_m2">보일러</button>
+                    <button type="button" class="tab_m tab_m3">온수매트</button>
+                    <button type="button" class="tab_m tab_m4">DC온열매트</button>
+                    <button type="button" class="tab_m tab_m5">청정환기시스템</button>
+                    <button type="button" class="tab_m tab_m6">스마트 홈</button>
+                    <button type="button" class="tab_m tab_m7">교체용 필터</button>
+                </div>
+                <div class="tab_cont_wrap">
+                    <div class="tab_cont tab_cont1">
+                        <div class="best_product_slide">
+                            <div class="best_track">
+                                <div class="best_slide">
+                                    <div class="best_item">
+                                        <div class="product_wrap">
+                                            <ul class="badge_wrap">
+                                                <li class="badge badge_new ir_pm">new</li>
+                                                <li class="badge badge_best ir_pm">best</li>
+                                            </ul>
+                                            <a href="#" class="product_a">
+                                                <img src="./img/제품이미지 (10).png" alt="제품이미지10">
+                                                <em>NAVIEN MATE</em>
+                                                <span class="pr_name">The Care <br>The Care EQM562</span>
+                                                <span class="pr_price"><strong>418,000</strong>원</span>
+                                            </a>
+                                            <div class="product_tag">
+                                                <a href="#">블루투스</a>
+                                                <a href="#">자동살균</a>
+                                                <a href="#">빠른난방</a>
+                                                <a href="#">자동물빼기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best_item">
+                                        <div class="product_wrap">
+                                            <ul class="badge_wrap">
+                                                <li class="badge badge_new ir_pm">new</li>
+                                                <li class="badge badge_best ir_pm">best</li>
+                                            </ul>
+                                            <a href="#" class="product_a">
+                                                <img src="./img/제품이미지 (11).png" alt="제품이미지11">
+                                                <em>NAVIEN MATE</em>
+                                                <span class="pr_name">The Care <br>The Care EQM562</span>
+                                                <span class="pr_price"><strong>418,000</strong>원</span>
+                                            </a>
+                                            <div class="product_tag">
+                                                <a href="#">블루투스</a>
+                                                <a href="#">자동살균</a>
+                                                <a href="#">빠른난방</a>
+                                                <a href="#">자동물빼기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best_item">
+                                        <div class="product_wrap">
+                                            <ul class="badge_wrap">
+                                                <li class="badge badge_new ir_pm">new</li>
+                                                <li class="badge badge_best ir_pm">best</li>
+                                            </ul>
+                                            <a href="#" class="product_a">
+                                                <img src="./img/제품이미지 (19).png" alt="제품이미지19">
+                                                <em>NAVIEN MATE</em>
+                                                <span class="pr_name">The Care <br>The Care EQM562</span>
+                                                <span class="pr_price"><strong>418,000</strong>원</span>
+                                            </a>
+                                            <div class="product_tag">
+                                                <a href="#">블루투스</a>
+                                                <a href="#">자동살균</a>
+                                                <a href="#">빠른난방</a>
+                                                <a href="#">자동물빼기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best_item">
+                                        <div class="product_wrap">
+                                            <ul class="badge_wrap">
+                                                <li class="badge badge_new ir_pm">new</li>
+                                                <li class="badge badge_best ir_pm">best</li>
+                                            </ul>
+                                            <a href="#" class="product_a">
+                                                <img src="./img/제품이미지 (13).png" alt="제품이미지13">
+                                                <em>NAVIEN MATE</em>
+                                                <span class="pr_name">The Care <br>The Care EQM562</span>
+                                                <span class="pr_price"><strong>418,000</strong>원</span>
+                                            </a>
+                                            <div class="product_tag">
+                                                <a href="#">블루투스</a>
+                                                <a href="#">자동살균</a>
+                                                <a href="#">빠른난방</a>
+                                                <a href="#">자동물빼기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best_item">
+                                        <div class="product_wrap">
+                                            <ul class="badge_wrap">
+                                                <li class="badge badge_new ir_pm">new</li>
+                                                <li class="badge badge_best ir_pm">best</li>
+                                            </ul>
+                                            <a href="#" class="product_a">
+                                                <img src="./img/제품이미지 (14).png" alt="제품이미지14">
+                                                <em>NAVIEN MATE</em>
+                                                <span class="pr_name">The Care <br>The Care EQM562</span>
+                                                <span class="pr_price"><strong>418,000</strong>원</span>
+                                            </a>
+                                            <div class="product_tag">
+                                                <a href="#">블루투스</a>
+                                                <a href="#">자동살균</a>
+                                                <a href="#">빠른난방</a>
+                                                <a href="#">자동물빼기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="best_item">
+                                        <div class="product_wrap">
+                                            <ul class="badge_wrap">
+                                                <li class="badge badge_new ir_pm">new</li>
+                                                <li class="badge badge_best ir_pm">best</li>
+                                            </ul>
+                                            <a href="#" class="product_a">
+                                                <img src="./img/제품이미지 (15).png" alt="제품이미지15">
+                                                <em>NAVIEN MATE</em>
+                                                <span class="pr_name">The Care <br>The Care EQM562</span>
+                                                <span class="pr_price"><strong>418,000</strong>원</span>
+                                            </a>
+                                            <div class="product_tag">
+                                                <a href="#">블루투스</a>
+                                                <a href="#">자동살균</a>
+                                                <a href="#">빠른난방</a>
+                                                <a href="#">자동물빼기</a>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="main_nav">
+                                    <button class="prev ir_pm" type="button">prev</button>
+                                    <button class="next ir_pm" type="button">next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_cont tab_cont2"></div>
+                    <div class="tab_cont tab_cont3"></div>
+                    <div class="tab_cont tab_cont4"></div>
+                    <div class="tab_cont tab_cont5"></div>
+                    <div class="tab_cont tab_cont6"></div>
+                    <div class="tab_cont tab_cont7"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <h2 class="skip">나비엔 서비스</h2>
+        <div class="container">
+            <h2>나비엔 TOUCH 서비스</h2>
+            <p>365일 24시간 고객의 마음까지 행복하게 언제나 처음부터 끝까지 책임집니다.</p>      
+            <div class="service_wrap">
+                <ul class="left">
+                    <li>
+                        <a href="#">
+                            <span class="icon_t icon_t01"></span>
+                            <span class="text">
+                                <b>A/S접수</b> <br> <span>A/S 접수 안내</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_t icon_t02"></span>
+                            <span class="text">
+                                <b>1:1문의</b> <br> <span>궁금한 사항을 <br> 1:1로 문의하세요</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_t icon_t03"></span>
+                            <span class="text">
+                                <b>FAQ</b> <br> <span>FAQ로 궁금증을 <br>해결해보세요</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_t icon_t04"></span>
+                            <span class="text">
+                                <b>채팅상담</b> <br> <span>모바일 채팅으로 <br> 상담받으세요</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_t icon_t05"></span>
+                            <span class="text">
+                                <b>영상상담</b> <br> <span>실시간 영상으로 <br> 상담받으세요</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_t icon_t06"></span>
+                            <span class="text">
+                                <b>동영상 가이드</b> <br> <span>동영상으로 사용법을 <br> 손쉽게 알아보세요 </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon_t icon_t07"></span>
+                            <span class="text">
+                                <b>다운로드</b> <br> <span>카달로그 / 설명서를 <br> 다운받으세요 </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>     
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="f_header">
+            <div class="container">
+                <div class="f_top_wrap">
+                    <div class="f_list">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_sns_site">
+                        <div class="f_sns">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                                <li><a href="#"><i class="fas fa-envelope fa-2x"></i></a></li>
+                                <li><a href="#"><i class="fas fa-play fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="f_site">
+                            <ul> 
+                                <li><a href="#">Family Site</a>
+                                    <div class="site_wrap">
+                                        <ul>
+                                            <li><a href="#">(주)경동원</a></li>
+                                            <li><a href="#">(주)경동나비엔</a></li>
+                                            <li><a href="#">(주)경동에버런</a></li>
+                                            <li><a href="#">(주)경동폴리움</a></li>
+                                            <li><a href="#">(주)경동티에스</a></li>
+                                            <li><a href="#">경동나비엔 미국법인</a></li>
+                                            <li><a href="#">경동나비엔 러시아법인</a></li>
+                                            <li><a href="#">경동나비엔 북경법인</a></li>
+                                            <li><a href="#">경동인재개발원</a></li>
+                                            <li><a href="#">재단법인 늘푸른</a></li>
+                                            <li><a href="#">인사채용</a></li>
+                                            <li><a href="#">(주)경동도시가스</a></li>
+                                            <li><a href="#">(주)경동건설</a></li>
+                                            <li><a href="#">(주)경동이엔에스</a></li>
+                                            <li><a href="#">(주)경동홀딩스</a></li>
+                                            <li><a href="#">(주)경동</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f_bot">
+            <div class="container">
+                <div class="f_info">
+                    <h2 class="f_logo"><a href="#"><img src="./img/foot_logo.png" alt="나비엔하우스 배너"></a></h2>
+                    <div class="f_addr">
+                         (주)경동나비엔 <span class="bar">|</span> 경기 평택시 서탄면 수월암길 95&nbsp;1층
+                         <span class="bar">|</span>대표이사 : 손연호
+                         <br>
+                         사업자등록번호 : 125-81-01234 <span class="bar">|</span> 통신판매신고번호 : 제2015-경기송탄92호<span class="bar">|</span>
+                         <a href="#" title="사업자정보확인" class="b_info"><span>사업자정보확인</span></a> 
+                         <br>
+                         <p class="copy">Copyright © 2019 KYUNG DONG NAVIEN. All Rights Reserved.</p>
+                    </div>
+                    <a href="#" class="f_banner">
+                        <img src="./img/foot_banner_es.png" alt="NHN KCP 구매안전(에스크로) 서비스">
+                    </a>
+                    <div class="f_service">
+                        <div>
+                            <p class="text">365일 24시간 고객상담센터</p>
+                            <strong>1588-1144</strong>
+                        </div>
+                        <a href="#" class="qa">1:1상담하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

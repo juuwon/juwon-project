@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 로딩 */
+@keyframes loading{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(10px);}
+}
+/* 화살표 */
+@keyframes scroll {
+    0%{
+        opacity: 0;
+        margin-bottom: 0%;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 20%;
+    }
+}
+/* path */
+@keyframes drawPath1{
+    0%{stroke-dashoffset: 6884; opacity: 0;}
+    100%{stroke-dashoffset: 0; opacity: 1;}
+}
+@keyframes floating{
+    50%{transform: translate3d(0, 40px, 0);}
+}
+/* 써클 */
+@keyframes circle {
+    0% {transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes circle1 {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes circle2 {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/* 홈 */
+
+@keyframes line {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes textArea{
+    0%{transform: translateY(100%); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+@keyframes nav {
+    0%{transform: translateX(100%); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+}
+@keyframes logo {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+

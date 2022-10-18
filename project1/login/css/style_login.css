@@ -1,0 +1,83 @@
+@charset "utf-8";
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+/* 스킵 */
+.skip {overflow: hidden; position: absolute; width: 1px; height: 1px; background: 0 0; font-size: 0; color: transparent; line-height: 0;}
+
+#wrapper {position: relative; width: 100%;}
+.wrap {width: 1200px; position: relative; margin-left: auto; margin-right: auto;}
+
+.login {position: relative; background-color: #0054a6;}
+.login::before {display: block; content: ''; background: url(../images/login_background.png); top: 0; left: 50vw; width: 1200px; height: 1000px; position:absolute; background-size: cover;}
+
+.login_header {position: relative;}
+.login_header .gnb {position: absolute; top: 16px; left: 50px; font-size: 15px; font-weight: 400; z-index: 10;}
+.login_header .gnb .gnb_link {color: #fff; display: block; position: relative; padding-right: 23px; letter-spacing: -0.01em;}
+.login_header .gnb .gnb_link:hover {text-decoration: underline;}
+.login_header .gnb .gnb_link::after {background: url(../images/login_sprite.png) no-repeat; display: block; content: ''; position: absolute; top: 4px; right: 0; width: 17px;height: 17px;}
+
+.login_header .logo {display: block; position: relative; padding-top: 140px; padding-bottom: 74px; font-size: 0; line-height: 0; text-align: center;}
+.login_header .logo span {vertical-align: middle;}
+.login_header .logo .text {margin-top: 5px; margin-left: 13px;}
+
+/* 로그인 박스 */
+.login_box {margin-left: 10px; margin-right: 10px;}
+.login_box .inner{padding: 70px; border-radius: 45px; background-color: #fff;}
+.login_item {box-sizing: border-box; position: relative; float: left; width: 310px; height: 360px; padding: 32px 35px 35px; border-radius: 30px; background-color: #f2f2f2; letter-spacing: -0.035em; margin-left: 15px;}
+.login_item:first-child {width: 390px; margin-left: 0;}
+.login h3 {padding-bottom: 16px; border-bottom: 1px solid #000; color: #000; font-size: 20px; line-height: 24px; font-weight: 400;}
+.tab {text-align: center;}
+.tab .tab_list {font-size: 0; line-height: 0;}
+.tab .tab_item {display: inline-block; position: relative;}
+
+/* 로그인 인풋 */
+.tab .tab_item .tab_anchor.active {border-top-color:#000; color: #000; font-weight: 700;}
+.tab .tab_item .tab_anchor:hover  {color: #000; font-weight: 700;}
+.tab .tab_item .tab_anchor {display: block; position: relative; padding: 12px 11px 12px 34px; border-top: 3px solid transparent; font-size: 17px; line-height: 19px; font-weight: normal;}
+.tab .tab_item .tab_anchor::before {display: block; content: ''; position: absolute; background-image: url(../images/login_sprite.png); background-repeat: no-repeat; width: 20px; height: 21px; background-size: 114.99% 804.76%; top: 12px;left: 9px; background-position: left -57px;}
+.tab .tab_item .tab_anchor.active::before, .tab .tab_item .tab_anchor:hover::before {background-position: left -27px;}
+
+.tab .tab_content.active {display: block;}
+.tab .input_line {margin-top: 5px;}
+.tab .tab_lable {width: 78px; height: 40px; margin-right: 2px; background-color: #ccc; color: #333; font-size: 15px; line-height: 40px; font-weight: 700; vertical-align: top; display: inline-block;}
+.tab .tab_content.phone .tab_lable {width: 113px;}
+.tab .tab_content .login_input {width: calc(100% - 115px); display: inline-block;}
+.tab .tab_content.phone .login_input {width: calc(100% - 150px); display: inline-block;}
+
+.login_input {width: 87%; height: 40px; padding-left: 15px; padding-right: 15px; border: 1px solid #ccc; background-color: #fff; vertical-align: top; display: inline-block;}
+.login_item .login_btn {display: block; width: 100%; margin-top: 10px; padding: 12px; border-radius: 5px; background-color: #03a0dc; color: #fff; font-size: 17px; font-weight: 700; border: 1px solid;}
+.login_item .login_btn:hover {color: #0054a6; background-color: #fff; border: 1px solid #0054a6;}
+.login_item.onepass .login_btn:hover {color: #000; background-color: #fff; border: 1px solid #000;}
+.login_item.onepass .login_btn:hover::before{content: ''; display: block; background-position: left 100%; background-size: 100% 804.76%;}
+.login_item.login_item.non_members .login_btn:hover {color: #000; background-color: #fff; border: 1px solid #000;}
+
+.login_menu {margin-top: 24px; margin-left: 3px; text-align: left;}
+.login_menu ul li {display: inline-block; margin-right: 10px;}
+.login_menu ul li a {display: block; position: relative; padding-bottom: 5px; color: #666; font-size: 15px; font-weight: 600;}
+.login_menu ul li a:before {display: block; content: ''; position: absolute; top: 0; left: -3px; width: 4px; height: 4px; background-color: #03a0dc; border-radius: 3px;}
+.login_menu ul li a:after {display: block; content: ''; bottom: 0; left: 0; width: 100%; height: 1px; background: url(../images/deco.png) repeat-x;}
+
+/* 원패스 */
+.login_item.onepass .text {position: relative; min-height: 47px; padding-left: 25px; line-height: 20px;} 
+.login_item.onepass .text:before {display: block; content: ''; top: 0; left: 0; width: 18px; height: 18px; background-image: url(../images/login_sprite.png); background-position: left 80px; position: absolute;}
+.login_item .text {margin-top: 30px; margin-bottom: 20px; color: #666; font-size: 15px;}
+.login_item.onepass .login_btn {position: relative; padding-left: 46px; background-color: #0054a6;}
+.login_item.onepass .login_btn::before {display: block; content: ''; position: absolute; top: 13px; left: 27px; background-image: url(../images/login_sprite.png); background-repeat: no-repeat; width: 23px; height: 21px; background-size: 100% 804.76%; background-position: left -116px;}
+
+/* 비회원 */
+.login_item.non_members .text {min-height: 97px; letter-spacing: -0.035em;}
+.login_item.non_members .login_btn {background-color: #000;}
+.em_b_black {color: #333; font-weight: 600;}
+
+/* 텍스트 */
+.login_text {margin-top: 20px; color: #000; letter-spacing: -0.025em;}
+ul.bu > li {position: relative; padding-left: 10px; font-size: 16px; color: #000; line-height: 27px;}
+ul.bu > li:before {display: block; content: ''; top: 11px; left: 0; width:4px; height: 4px; border-radius: 50%; background-color: #000; position: absolute;}
+.em_pink {color: #de346e; font-weight: 400;}
+
+/* footer */
+.footer {margin-top: 20px; margin-left: 20px; margin-right: 20px; padding-bottom: 130px; color: #fff; font-size: 17px; line-height: 20px; text-align: center;}
+
+#tab_content2, #tab_content3 {display: none;}
+
+

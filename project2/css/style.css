@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+body {font-family: 'Noto Sans KR', sans-serif;} 
+
+/* 전체레이아웃 */
+#header{width: 100%; height: 153px;/*  background: rgba(0,0,0,.7) ; */}
+
+/* 레이아웃 */
+.container {width: 1180px; height: inherit; margin: 0 auto; background: rgba(15, 139, 197, 0.4);}
+#htop-menu {width: 100%; height: 40px;}
+#nav-Menu {width: 100%; height: 66px;}
+
+/* 제목스킵 */
+.skip{overflow: hidden; position: absolute; width: 1px; height: 1px; background: 0 0; font-size: 0 !important; color: transparent !important; line-height: 0;}
+
+/* 헤더 탑 메뉴 */
+#htop-menu {display: flex; justify-content: space-between;}
+#htop-menu .gnb_link { margin-top: 20px;}
+#htop-menu .gnb_link a{font-size: 1.4rem; padding-right: 1.7rem; display: block; background: url(../img/top_go_link.png) no-repeat right;}
+#htop-menu .list_link {display: flex; margin-top: 15px;}
+#htop-menu .list_link .list_item a{display: block; font-size: 1.4rem; margin-right: 10px; color: #333; letter-spacing: -0.035em;}
+#htop-menu .list_link .list_item a::after {display: inline-block; content: ''; width: 1px; height: 10px; background-color: #666; margin-left: 1.1rem;}
+#htop-menu .list_link .list_item:last-child a::after {content: none;}
+
+/* 로고 */
+.logo {text-align: center;}
+.logo a {background: url(../img/logo.png) no-repeat left; display: inline-block; width: 314px; height: 42px;}
+
+/* 네비 메뉴 depth1 */
+#nav-Menu {display: flex; justify-content: space-between; align-items: center;}
+.nav_gnb {display: flex; align-items: center; margin-top: 1.6rem; margin-left: 1rem;}
+#nav-Menu .site_map {}
+#nav-Menu .site_map .allmenu_btn {background: url(../img/btn_allmenu.png) no-repeat 0 0; width: 20px; height: 20px;}
+#nav-Menu .menu_list {display: flex; margin-left: 4rem;}
+#nav-Menu .menu_list .menu_item {font-size: 1.8rem; margin-right: 3rem; position: relative;}
+#nav-Menu .menu_list .menu_item > a {display: block; padding: 1.2rem 0;}
+#nav-Menu .menu_list .menu_item.m1>a::after {
+    background: url(../img/gnb_on.png) no-repeat center bottom;
+    content: '';
+    width: 20px;
+    height: 11px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: block;
+    margin: 0 auto;
+} 
+#nav-Menu .menu_list .menu_item a img {vertical-align: text-bottom;}
+#nav-Menu .top_srch {display: flex; align-items: center; margin-top: 1rem; margin-right: 1rem;}
+#nav-Menu .top_srch .search_icon a {background: url(../img/btn_srch.png) no-repeat; width: 24px; height: 24px; display: block;}
+#nav-Menu .top_srch .cart {position: relative; margin-left: 2.5rem;}
+#nav-Menu .top_srch .cart>a {background: url(../img/ico_cart.png) no-repeat ; width: 32px; height: 25px; display: block;}
+#nav-Menu .top_srch .cart .cart_count a {position: absolute; display: block; top: 0; right: 0; width: 18px; height: 19px; background: #ff730f; border-radius: 50%; text-align: center; color: #fff; font-size: 1.2rem;}
+
+
+
+/* 네비 메뉴 depth2 */
+.depth2_wrap {position: absolute; top: 51px; left: 0; display: none;}
+.depth2_wrap.depth2_wrap1 {background: url(../img/bg_gnb_m1.png) no-repeat 0 0; width: 1183px; height: 437px;}
+.depth2_wrap.depth2_wrap2 {background: url(../img/bg_gnb_sub_bottom.png) no-repeat 0 0; width: 183px; height: 42px; position: absolute; top: 51px; left: -58px;}
+.depth2_wrap2 > .depth2_l2 {padding: 65px 0 0 30px;}
+.depth2_wrap2 .depth2_item2 {}
+.depth2_wrap2 .depth2_item2 > a {font-size: 1.5rem; display: block; background: red}
+
+.depth2_wrap h2 {font-size: 1.8rem; height: 40px; text-align: center; font-weight: 500; margin-top: 1px; margin-left: 1px;}
+.depth2_wrap h2 span {padding-top: 0.8rem; display: inline-block;}
+.depth2_wrap1 h2 {width: 378px; background: #e0e8ed; border-bottom: 1px solid #ddd;}
+.depth2_wrap .depth2_list {padding-top: 2.6rem; padding-left: 5.8rem;}
+.depth2_wrap .depth2_list .depth2_item {margin-bottom: 1rem;}
+.depth2_wrap .depth2_list .depth2_item .depth2_anchor {font-size: 1.6rem; display: inline-block; width: 136px; height: 50px; text-align-last: left; line-height: 50px; font-weight: 500;}
+.depth2_wrap .depth2_list .depth2_item .active{color:#ff730f;  background: url(../img/arr_gnb_g1.png) no-repeat right 50%;}
+
+/* 네비 메뉴 depth3 */
+.depth3_list {position: absolute; top: 68px; left: 170px; margin-left: 5.6rem; display: block; width: 900px; height: 388px;}
+.depth3_list .depth3_item {margin-bottom: 0.9rem; width: 160px;}
+.depth3_list .depth3_item .depth3_anchor {display: block; width: 160px; height: 50px; line-height: 48px; font-size: 1.6rem; text-align-last: left; color: #666;}
+.depth3_list .depth3_item:hover .depth3_anchor {color: #333; font-weight: 500; display: block;}
+.prdt_main {width: 700px; height: 390px; top: -67px; left: 177px; position: absolute; padding-top: 4rem; padding-left: 10rem; display: none;}
+.prdt_main .product_content {width: 180px; height: 430px; float: left; margin-left: 30px;}
+.prdt_main .product_content:first-child {margin-left: 0;}
+.prdt_main .product_content .product_anchor{text-align: center; display: block; cursor: pointer;}
+.prdt_main .product_content .product_anchor em {font-size: 1.3rem; color: #64a6a9; display: block; height: 19px; margin-top: 15px; font-weight: 500;}
+.prdt_main .product_content .product_anchor .prdt_name {font-size: 1.6rem; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; width: 188px; margin: 15px auto 0; color: #333; letter-spacing: -0.025em;}
+.prdt_main .product_content .product_anchor .prdt_price {font-size: 1.6rem; padding-top: 10px; display: block;}
+.prdt_main .product_content .product_anchor .prdt_price strong {font-size: 2.4rem; font-weight: 700; line-height: 1;}
+
+
+
+
+
+

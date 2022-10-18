@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1 class="skip">한국철도공사 로그인페이지</h1>
+        <div class="login">
+            <div class="wrap">
+                <div class="login_header">
+                    <div class="gnb">
+                        <a href="#" class="gnb_link" title="한국 철도공사로 이동">한국철도공사로 이동</a>
+                    </div>
+                    <h1 class="logo">
+                        <span class="image"><img src="./images/login_logo.svg" alt="KORAIL"></span>
+                        <span class="text"><img src="./images/login_logoText.png" alt="한국철도공사 로그인"></span>
+                    </h1>
+                </div>
+                <div class="login_box">
+                    <h1 class="skip">로그인 박스</h1>
+                    <div class="inner">
+                        <div class="login_list cf">
+                            <div class="login_item member">
+                                <h3>회원 로그인</h3>
+                                    <div class="tab">
+                                        <form action="#" name="form" method="post">
+                                            <ul class="tab_list">
+                                                <li class="tab_item"><a href="#tab_content1" class="tab_anchor  active">이메일</a></li>
+                                                <li class="tab_item"><a href="#tab_content2"  class="tab_anchor">멤버쉽번호</a></li>
+                                                <li class="tab_item"><a href="#tab_content3"  class="tab_anchor">휴대번호</a></li>
+                                            </ul>
+                                            <div class="tab_content active" id="tab_content1">
+                                                <fieldset>
+                                                    <legend class="skip">회원 로그인-이메일</legend>
+                                                    <div class="input_line">
+                                                        <label for="EmailId" class="tab_lable">이메일</label>
+                                                        <input type="text" name="Email" class="login_input " id="EmailId" value="">
+                                                    </div>
+                                                    <div class="input_line">
+                                                        <label for="EamilPasswd" class="tab_lable">비밀번호</label>
+                                                        <input type="password" name="Passwd" class="login_input" id="EamilPasswd" value="">
+                                                    </div>
+                                                    <input type="button" value="로그인" class="login_btn">
+                                                </fieldset>
+                                            </div>
+                                            <div class="tab_content" id="tab_content2">
+                                                <fieldset>
+                                                    <legend class="skip">회원 로그인 - 멤버십번호</legend>
+                                                    <div class="input_line">
+                                                        <label for="txtMember" class="tab_lable">아이디</label>
+                                                        <input type="text" name="txtMember" class="login_input" id="txtMember" value="">
+                                                    </div>
+                                                    <div class="input_line">
+                                                        <label for="numPasswd" class="tab_lable">비밀번호</label>
+                                                        <input type="password" name="txtPwd" class="login_input" id="numPasswd" value="">
+                                                    </div>
+                                                    <input type="button" value="로그인" class="login_btn">
+                                                </fieldset>
+                                            </div>
+                                            <div class="tab_content phone" id="tab_content3">
+                                                <fieldset>
+                                                    <legend class="skip">회원 로그인 - 이메일</legend>
+                                                    <div class="input_line">
+                                                        <label for="txtCpNo" class="tab_lable">휴대전화번호</label>
+                                                        <input type="tel" name="txtCpNo" class="login_input" id="txtCpNo" placeholder="숫자만 입력하세요.">
+                                                    </div>
+                                                    <div class="input_line">
+                                                        <label for="txtPwd1" class="tab_lable">비밀번호</label>
+                                                        <input type="password" name="txtPwd1" class="login_input" id="txtPwd1" value="">
+                                                    </div>
+                                                   <input type="button" value="로그인" class="login_btn">
+                                                </fieldset>
+                                            </div>
+                                        </form>
+                                        <div class="login_menu">
+                                            <ul>
+                                                <li><a href="https://www.letskorail.com/korail/com/member/join_info.do" target="_self">회원가입</a></li>
+                                                <li><a href="https://www.letskorail.com/korail/com/newFindId.do" target="_self" >아이디 찾기</a></li>
+                                                <li><a href="https://www.letskorail.com/korail/com/newFindPass.do" target="_self">비밀번호 찾기</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="login_item onepass">
+                                <h3>디지털원패스</h3>
+                                <p class="text">이용문의 : 02-374-9080~1<br>월~금 9:00~18:00 / 공휴일 제외</p>
+                                <div class="login_button">
+                                    <input class="login_input" name="oneLogin" value="" type="text" placeholder="디지털원패스 아이디" title="디지털원패스 아이디">
+                                    <button class="btn login_btn" type="submit">디지털원패스로 로그인</button>
+                                </div>
+                                <div class="login_menu">
+                                    <ul>
+                                        <li><a href="">디지털원패스 회원가입</a></li>
+                                        <li class="idfind"><a href="">아이디 찾기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="login_item non_members">
+                                <h3>비회원 실명인증</h3>
+                                <p class="text">생년월일 기반의 본인확인 서비스로 <br> 웹사이트 이용자의 민감한 개인정보 입력 없이도실명 확인·본인 확인이 가능한<br> <span class="em_b_black">"주민번호대체인증서비스"</span>입니다</p>
+                                <button type="button" class="login_btn" title="새창">휴대폰 본인인증</button>
+                            </div>
+                        </div>
+                        <div class="login_text">
+                            <ul class="bu">
+                                <li>제공된 본인 확인 방법으로 본인확인 절차가 불가능하신 경우 고객센터(1544-7788, 1588-7748)로 문의하여 주시기 바랍니다.</li>
+                                <li>타인의 주민등록번호를 부정사용하면 3년이하의 징역 또는 1천만원 이하의 벌금에 처해지게 됩니다.<br>
+                                <span class="em_pink">※ 관련법률 : 주민등록법 제37조(벌칙)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                COPYRIGHT ⓒ KOREA RAILROAD. ALL RIGHTS RESERVED.
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

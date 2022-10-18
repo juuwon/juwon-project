@@ -1,0 +1,48 @@
+//a링크 막기
+$('a').click(function(event){
+    event.preventDefault();
+});
+
+/* 1뎁스 메뉴 */
+let atrue = true;
+$(".menu_item>a").click(function(){
+
+    if(atrue==true){
+        $(this).next('.sub_wrap').stop().slideDown(1000);
+        $(this).parent().addClass('on')
+        atrue=false;
+    }else{
+        $(this).next('.sub_wrap').stop().slideUp(1000);
+        $(this).parent().removeClass('on')
+        atrue=true;
+    }
+});
+
+/* mobile han 메뉴 */
+$('.app-btn').click(function(){
+    $('.bar') .toggleClass('addAppBtn');
+    $('.mobile-nav') .slideToggle(1000);
+});
+-------------슬라이드-------------------
+$(function(){
+    $('.bxslider').bxSlider({
+      mode: 'fade'
+    });
+  });
+
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
