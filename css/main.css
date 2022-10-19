@@ -13,7 +13,7 @@ body {font-family: 'Noto Sans KR', 'Anton', sans-serif;}
 #footer{width: 100%;}
 
 
-.header-wrap {width: 100%; max-width: 1700px; height: inherit; margin: 0 auto; background-color: var(--color-gray2); position: relative;}
+.header-wrap {width: 100%; max-width: 1700px; height: inherit; margin: 0 auto; position: relative;}
 .container {width: 100%; max-width: 1200px; height: 794px; margin: 0 auto; background: var(--color-gray2);}
 .container2 {width: 100%; max-width: 1200px; height: 100%; margin: 0 auto; background: var(--color-gray2);}
 .line {width: 100%; max-width: 1700px;  height: inherit; background: var(--color-gray2); margin: 0 auto; border: 3px solid var(--color-gray1); margin-bottom: 5.6rem; opacity: 0; animation: line 1s ease-in-out forwards; animation-delay: 4.3s;}
@@ -21,7 +21,6 @@ body {font-family: 'Noto Sans KR', 'Anton', sans-serif;}
 /* header */
 .header-wrap.fixed{
     width: 100%; 
-    position: fixed; top: 0; left: 0; 
     transition: .3s;
     z-index: 10;
 }
