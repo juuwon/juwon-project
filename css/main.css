@@ -19,10 +19,6 @@ body {padding-right: 60px; padding-left: 60px}
 .line {width: 100%; max-width: 1700px;  height: inherit; background: var(--color-gray2); margin: 0 auto; border: 3px solid var(--color-gray1); margin-bottom: 5.6rem; opacity: 0; animation: line 1s ease-in-out forwards; animation-delay: 4.3s;}
 
 /* header */
-/* .header-wrap.fixed{
-    width: 100%;
-    
-} */
 .header-top{
     width: 100%;
     max-width: 1600px;
