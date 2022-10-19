@@ -58,8 +58,8 @@
     .skill-txtBox p {
         padding: 30px 20px 50px;
     }
-    .tab-menu > li > a {
-        font-size: 1.9rem;
+    .tab-menu > li > button {
+        font-size: 1.8rem;
     }
     
 }
@@ -68,7 +68,7 @@
     /* home */
     .text-area {font-size: 7rem;}
     .home-wrap svg {width: 200px; height: 308px;}
-    .header-top .nav ul li a {display: none;}
+    .header-top .nav ul li a, .switch svg {display: none;}
     .tab-menu > li {padding: 0px;}
     .tab-menu {
         display: flex;
