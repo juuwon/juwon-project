@@ -20,9 +20,9 @@ $(window).scroll(function () {
   var window = $(this).scrollTop();
 
   if (fixed <= window) {
-    $(".header-wrap").addClass("fixed");
+    $(".header-top").addClass("fixed");
   } else {
-    $(".header-wrap").removeClass("fixed");
+    $(".header-top").removeClass("fixed");
   }
 });
 

@@ -1,8 +1,16 @@
 @charset "utf-8";
 
 @media screen and (max-width:1700px){
-    body {padding-right: 40px; padding-left: 40px}
+    body {padding-right: 55px; padding-left: 55px}
+    .header-top.fixed {
+        left: 55px;
+    }
+    .header-top .nav ul{
+        justify-content: left;
+    }
+    
 }
+
 
 @media screen and (max-width:1450px){
     /* about */
@@ -60,6 +68,10 @@
     }
     .tab-menu > li > button {
         font-size: 1.8rem;
+    }
+
+    .txtBox {
+        padding: 90px 50px;
     }
     
 }
@@ -146,7 +158,7 @@
     .tab-menu {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
 }
